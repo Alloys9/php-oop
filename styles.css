@@ -1,0 +1,102 @@
+/* CSS for display.php */
+:root {
+    --bg-color: #f5f5f5; /* Background color */
+    --second-bg-color: #e0e0e0; /* Second background color */
+    --text-color: #333; /* Text color */
+    --main-color: #ff914d; /* Main color */
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+}
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+    transition: color 0.3s, background-color 0.3s;
+    float: right;
+}
+
+a:hover {
+    color: #fff;
+    background-color: var(--main-color);
+}
+a:active {
+    color: #ff0000;
+    background-color: #ff0000;
+}
+
+
+h1 {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 20px;
+    text-align: center;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: var(--second-bg-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table, th, td {
+    border: 1px solid --text-color;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* CSS for forms.php */
+form {
+    max-width: 400px; /* Adjust the max-width as needed */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--second-bg-color);
+    box-shadow: 0 0 10px var(--text-color);
+    text-align: center; /* Center text within the form */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    text-align: left; /* Align label text to the left */
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+    box-sizing: border-box; 
+}
+
+input[type="submit"] {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 10px 20px;
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto; 
+}
+
+
+input[type="submit"]:hover {
+    background-color: var(--bg-color);
+}
